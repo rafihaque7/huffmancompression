@@ -1,0 +1,35 @@
+This program can compress any file
+
+Type "make" or "make all" to compile the program.
+Type "make clean" to remove .o files and the program
+
+-i input file
+-o output file
+-v verbose mode
+
+ex:
+
+encode -i testfile.txt -o foo
+
+    We are encoding testfile.txt. The compressed file will be called foo
+
+decode -i foo -o uncompressed.txt
+
+    We are now decompressing the file. The uncompressed file will be called uncompressed.txt
+
+code.h          provided by darrell, for stack code functions
+decode.c        The main function for decoding and loadTree function is located here
+decode.h        Declaration for decode.c
+encode.c        The main function for encoding and dumpTree is located here
+encode.h        declaration for encode.c
+huffman.c       For building the treeNode, and other treeNode functions
+huffman.h       The struct for treeNode is located here, and declaration for treenode functions
+Makefile        Compiling sequence instruction
+queue.c         The priority functions are located here
+queue.h         declaration for priority queue functions
+stack.c         The basic stack function
+stack.h         Declaration for stack.c, given by Darrell Long
+
+I worked on encode.c , priority queue, and stack. We used my private repo to collaborate. Worked on verbose mode, and how it outputs file for decode.c
+
+My partner worked on decode.c, huffman.c , added stuff to priority queue, and stack. He did a lot of encode.c
